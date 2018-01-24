@@ -24,7 +24,7 @@ github_username:  wusimo
 
 # Build settings
 markdown: redcarpet
-theme: jekylltheme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
