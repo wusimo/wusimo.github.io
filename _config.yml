@@ -23,8 +23,8 @@ twitter_username: wusimo
 github_username:  wusimo
 
 # Build settings
-markdown: redcarpet
-theme: jekylltheme-cayman
+markdown: kramdown
+theme: minima
 plugins:
   - jekyll-feed
 
