@@ -31,26 +31,26 @@ The basic assumption of this model is as follows:
 
 1. The state space we are interested in is in $$R^4$$. 
 
-$$Z(t) = (P(t),D(t),N(t),C(t))$$
+	$$Z(t) = (P(t),D(t),N(t),C(t))$$
 
-where $$P(t)$$ is the 'bitcoin price' at time t, $$D(t)$$ is the 'mining difficulty' at time t, $$N(t)$$ is the 'total number of coins already been mined', and $C(t)$ is the current 'total mining power' measured in unit TH.
+	where $$P(t)$$ is the 'bitcoin price' at time t, $$D(t)$$ is the 'mining difficulty' at time t, $$N(t)$$ is the 'total number of coins already been mined', and $C(t)$ is the current 'total mining power' measured in unit TH.
 
 2. For simplicity we only consider only one main bitcoin miner and that big player can make two kinds of constrained decision at each time: whether to invest more money on mining or to decrease the current mining power. So abstractly the dynamic of the state can be descrbed as:
 
 
-$$\frac{d}{dt}Z(t) = F(Z(t),\nu(t)) , t>0,$$
+	$$\frac{d}{dt}Z(t) = F(Z(t),\nu(t)) , t>0,$$
 
-$$ Z(0) = (P_0,D_0,N_0,C_0)$$
+	$$ Z(0) = (P_0,D_0,N_0,C_0)$$
 
-where $$\nu(t)$$ is the control term. $$P_0$$ is the initial bitcoin price, $$D_0$$ is the initial bitcoin mining difficulty, etc...
+	where $$\nu(t)$$ is the control term. $$P_0$$ is the initial bitcoin price, $$D_0$$ is the initial bitcoin mining difficulty, etc...
 
-As we mentioned earlier the 'Big Player' wants to maximize his profit in long term because he believes in Bitcoin and also wants to minimize his total cost spent on mining. We use the value functional J to represent his earning.
+	As we mentioned earlier the 'Big Player' wants to maximize his profit in long term because he believes in Bitcoin and also wants to minimize his total cost spent on mining. We use the value functional J to represent his earning.
 
 3. The value functional J is the functional which we want to maximize. Our main assumption here is that the big miner will always hold the mined bitcoin and eventually want to maximize their value with limited control. To write out:
 
-$$\nu(t) = sup_{\nu\in A} N(T)\cdot P(t)-\int_{0}^{T} \nu(t) dt $$
+	$$\nu(t) = sup_{\nu\in A} N(T)\cdot P(t)-\int_{0}^{T} \nu(t) dt $$
 
-where A is the admissible control set.
+	where A is the admissible control set.
 
 Under this abstract settings, we need to develop a reasonable function F which will somehow recover the dynamic of the whole system.
 
@@ -162,11 +162,17 @@ plt.show()
 Result
 ====================
 
-[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
+#BTC Price
 
-[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
+[![BTC Price ](/assets/BTC2.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
 
-[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
+#Total number of bitcoins
+
+[![Total number of bitcoins](/assets/BTC3.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
+
+#BTC Mining Difficulty
+
+[![BTC Mining Difficulty](/assets/BTC4.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
 The result has showed the time evolution of the probabilty density of the Bitcoin Price, Mining Difficulty, Total Number of Coins.
 
 We can see that this model has an upper bound of total number of coins which meets well with the design of Bitcoin.
