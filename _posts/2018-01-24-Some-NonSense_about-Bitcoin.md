@@ -12,8 +12,6 @@ During one boring afternoon, one of my friend in Boston sent me an interesting p
 [![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
 
 
-![test](/assets/BTC.jpg){:class="img-responsive"}
-
 Certainly the correlation between bitcoin price and bitcoin mining difficulty is obvious. But the question imediately pops up in my mind: Why? What is the cause behind this strong correlation?
 
 Let's start with this simple question: What are those people who devoted into bitcoin mining from the earliest days like? 
@@ -163,6 +161,12 @@ plt.show()
 
 Result
 ====================
+
+[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
+
+[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
+
+[![BTC Price vs BTC Mining Difficulty](/assets/BTC.jpg)](https://ibb.co/mcVxWw){:class="img-responsive"}
 The result has showed the time evolution of the probabilty density of the Bitcoin Price, Mining Difficulty, Total Number of Coins.
 
 We can see that this model has an upper bound of total number of coins which meets well with the design of Bitcoin.
