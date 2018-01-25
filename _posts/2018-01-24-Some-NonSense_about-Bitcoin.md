@@ -162,15 +162,15 @@ plt.show()
 Result
 ====================
 
-#BTC Price
+# BTC Price
 
 [![BTC Price ](/assets/BTC2.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
 
-#Total number of bitcoins
+# Total number of bitcoins
 
 [![Total number of bitcoins](/assets/BTC3.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
 
-#BTC Mining Difficulty
+# BTC Mining Difficulty
 
 [![BTC Mining Difficulty](/assets/BTC4.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
 The result has showed the time evolution of the probabilty density of the Bitcoin Price, Mining Difficulty, Total Number of Coins.
