@@ -178,3 +178,16 @@ The result has showed the time evolution of the probabilty density of the Bitcoi
 We can see that this model has an upper bound of total number of coins which meets well with the design of Bitcoin.
 
 And the Price has certain correlation with mining difficulty and both tends to grow exponentially.
+
+# BitCoin TipJar
+
+BTC Address: 112ca6RbrargroNBvosVZgY7BzmTsm7hhT
+
+[![BTC TipJar](/assets/BTC5.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
+
+# Ethereum TipJar
+
+ETH Address: 0x40B693679D7984aEb0062C25Ca3d406ECD2Aff41
+
+[![BTC TipJar](/assets/ETH.png)](https://ibb.co/mcVxWw){:class="img-responsive"}
+
