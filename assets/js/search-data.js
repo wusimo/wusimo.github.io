@@ -16,7 +16,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        },{id: "post-attention-residuals-making-the-quot-quot-learned",
+        
+          title: "Attention Residuals: Making the &quot;+&quot; Learned",
+        
+        description: "Part 2 — replacing the fixed `+` with a softmax over prior block outputs.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/attention-residuals/";
+          
+        },
+      },{id: "post-attention-the-residual-stream-and-what-39-s-hiding-in-the-quot-quot",
+        
+          title: "Attention, the Residual Stream, and What&#39;s Hiding in the &quot;+&quot;",
+        
+        description: "Part 1 — what the residual `+` in a transformer is actually doing, and why we should care.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/attention-and-residuals/";
+          
+        },
+      },{id: "post-ar-retrofit-and-reskip-attention-residuals-on-a-frozen-backbone",
+        
+          title: "AR-Retrofit and ReSkip: Attention Residuals on a Frozen Backbone",
+        
+        description: "Part 3 — retrofitting attention residuals into a pretrained decoder, and using the routing weights to skip blocks at inference.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ar-retrofit-and-reskip/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
