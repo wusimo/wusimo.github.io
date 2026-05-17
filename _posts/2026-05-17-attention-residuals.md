@@ -6,8 +6,6 @@ description: Part 2: replacing the fixed `+` with a softmax over prior block out
 tags: transformers attention adaptive-computation
 categories: ml
 related_posts: true
-toc:
-  beginning: true
 ---
 
 *Part 2 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/2026-05-17-attention-and-residuals/) set up the residual stream and the question this post answers.*

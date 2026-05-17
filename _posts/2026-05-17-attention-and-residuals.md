@@ -6,8 +6,6 @@ description: Part 1: what the residual `+` in a transformer is actually doing, a
 tags: transformers attention residuals
 categories: ml
 related_posts: true
-toc:
-  beginning: true
 ---
 
 *Part 1 of a series on attention residuals and AR-Retrofit.*

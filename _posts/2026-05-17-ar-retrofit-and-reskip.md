@@ -6,8 +6,6 @@ description: Part 3: retrofitting attention residuals into a pretrained decoder,
 tags: transformers attention adaptive-computation peft
 categories: ml
 related_posts: true
-toc:
-  beginning: true
 ---
 
 *Part 3 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/2026-05-17-attention-and-residuals/) set up the residual stream; [Part 2](/blog/2026/2026-05-17-attention-residuals/) replaced the fixed `+` with learned attention over depth.*
