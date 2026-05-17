@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrow3o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/>
+    </marker>
+  </defs>
+
+  <!-- prior outputs h_i column -->
+  <g font-style="italic">
+    <circle cx="100" cy="80"  r="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="100" y="84" text-anchor="middle" fill="#1e293b">h₀</text>
+
+    <circle cx="100" cy="170" r="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="100" y="174" text-anchor="middle" fill="#1e293b">h₁</text>
+
+    <circle cx="100" cy="260" r="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="100" y="264" text-anchor="middle" fill="#1e293b">h₂</text>
+
+    <circle cx="100" cy="350" r="20" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="100" y="354" text-anchor="middle" fill="#1e293b">h₃</text>
+
+    <text x="100" y="420" text-anchor="middle" fill="#6b7280" font-size="20">⋮</text>
+
+    <circle cx="100" cy="470" r="22" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="100" y="475" text-anchor="middle" fill="#1e293b">h_{l-1}</text>
+  </g>
+
+  <!-- router box (computes alpha before block l runs) -->
+  <rect x="290" y="200" width="160" height="100" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="370" y="230" text-anchor="middle" fill="#9a3412" font-weight="600">router</text>
+  <text x="370" y="252" text-anchor="middle" fill="#9a3412" font-size="12">α_{i→l} = softmax</text>
+  <text x="370" y="270" text-anchor="middle" fill="#9a3412" font-size="12">(w_l · k_i / √d)</text>
+  <text x="370" y="290" text-anchor="middle" fill="#9a3412" font-size="11" font-style="italic">runs before block l</text>
+
+  <!-- fan-in arrows to router with varying thickness (synthetic weights) -->
+  <line x1="122" y1="80"  x2="290" y2="220" stroke="#ea580c" stroke-width="1.2" opacity="0.75"/>
+  <line x1="122" y1="170" x2="290" y2="235" stroke="#ea580c" stroke-width="1.6" opacity="0.75"/>
+  <line x1="122" y1="260" x2="290" y2="250" stroke="#ea580c" stroke-width="2.8" opacity="0.85"/>
+  <line x1="122" y1="350" x2="290" y2="265" stroke="#ea580c" stroke-width="1.4" opacity="0.75"/>
+  <line x1="122" y1="470" x2="290" y2="285" stroke="#ea580c" stroke-width="4.0" opacity="0.9"/>
+
+  <!-- alpha labels near arrow midpoints -->
+  <text x="210" y="135" fill="#9a3412" font-size="11">α_{0→l}</text>
+  <text x="210" y="195" fill="#9a3412" font-size="11">α_{1→l}</text>
+  <text x="210" y="248" fill="#9a3412" font-size="11" font-weight="600">α_{2→l}</text>
+  <text x="210" y="318" fill="#9a3412" font-size="11">α_{3→l}</text>
+  <text x="195" y="395" fill="#9a3412" font-size="11" font-weight="600">α_{l-1→l}</text>
+
+  <!-- router output: x_l = sum -->
+  <line x1="450" y1="250" x2="510" y2="250" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow3)"/>
+  <text x="480" y="240" text-anchor="middle" fill="#1f2937" font-size="12" font-style="italic">x_l</text>
+
+  <!-- block l box -->
+  <rect x="510" y="220" width="140" height="60" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="580" y="255" text-anchor="middle" fill="#1e293b" font-weight="600">block l</text>
+
+  <!-- output h_l -->
+  <line x1="580" y1="280" x2="580" y2="330" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow3)"/>
+  <text x="600" y="315" fill="#1f2937" font-style="italic">h_l</text>
+
+  <!-- title note -->
+  <text x="350" y="30" text-anchor="middle" fill="#374151" font-size="13">
+    every prior output feeds the router; edge width ≈ α weight
+  </text>
+</svg>

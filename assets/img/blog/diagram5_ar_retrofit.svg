@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="arrow5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrow5o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ea580c"/>
+    </marker>
+  </defs>
+
+  <!-- main stream -->
+  <line x1="180" y1="50" x2="180" y2="580" stroke="#1f2937" stroke-width="2.5"/>
+  <polygon points="180,580 175,572 185,572" fill="#1f2937"/>
+
+  <!-- block n-1 (frozen) -->
+  <rect x="120" y="60" width="120" height="60" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="180" y="88" text-anchor="middle" fill="#1e293b">Block n−1</text>
+  <text x="180" y="108" text-anchor="middle" fill="#6366f1" font-size="11">❄ frozen</text>
+
+  <!-- label h_{n-1} on the stream -->
+  <text x="100" y="170" fill="#1f2937" font-style="italic">h_{n-1}</text>
+
+  <!-- + node where correction merges in -->
+  <circle cx="180" cy="430" r="15" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="180" y="435" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+
+  <!-- base path label (the standard residual, still present) -->
+  <line x1="170" y1="120" x2="170" y2="415" stroke="#ea580c" stroke-width="3" opacity="0.5"/>
+  <text x="90" y="290" fill="#9a3412" font-size="11">base path</text>
+  <text x="80" y="306" fill="#9a3412" font-size="11">(standard +)</text>
+
+  <!-- block n (frozen) -->
+  <rect x="120" y="475" width="120" height="60" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="180" y="503" text-anchor="middle" fill="#1e293b">Block n</text>
+  <text x="180" y="523" text-anchor="middle" fill="#6366f1" font-size="11">❄ frozen</text>
+
+  <!-- + to block n -->
+  <line x1="180" y1="445" x2="180" y2="475" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow5)"/>
+  <text x="195" y="465" fill="#1f2937" font-style="italic" font-size="12">x_n</text>
+
+  <!-- side channel start: tap from h_{n-1} -->
+  <line x1="180" y1="160" x2="330" y2="160" stroke="#1f2937" stroke-width="1.6" stroke-dasharray="4,3"/>
+
+  <!-- router box -->
+  <rect x="330" y="135" width="140" height="60" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="400" y="160" text-anchor="middle" fill="#9a3412" font-weight="600">router</text>
+  <text x="400" y="180" text-anchor="middle" fill="#9a3412" font-size="11">α from h_0..h_{n-1}</text>
+
+  <!-- r_n -->
+  <line x1="400" y1="195" x2="400" y2="225" stroke="#ea580c" stroke-width="1.6" marker-end="url(#arrow5o)"/>
+  <text x="415" y="218" fill="#9a3412" font-style="italic" font-size="12">r_n</text>
+
+  <!-- minus node (subtract h_{n-1}) -->
+  <circle cx="400" cy="245" r="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="400" y="250" text-anchor="middle" fill="#ea580c" font-weight="700">−</text>
+
+  <!-- h_{n-1} side line into minus -->
+  <line x1="180" y1="200" x2="480" y2="200" stroke="#1f2937" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <line x1="480" y1="200" x2="480" y2="245" stroke="#1f2937" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <line x1="480" y1="245" x2="414" y2="245" stroke="#1f2937" stroke-width="1.2" stroke-dasharray="3,3" marker-end="url(#arrow5)"/>
+  <text x="500" y="220" fill="#1f2937" font-size="11" font-style="italic">h_{n-1}</text>
+
+  <!-- adapter (low-rank) -->
+  <line x1="400" y1="259" x2="400" y2="290" stroke="#ea580c" stroke-width="1.6" marker-end="url(#arrow5o)"/>
+  <rect x="335" y="295" width="130" height="55" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="400" y="320" text-anchor="middle" fill="#9a3412" font-weight="600">adapter A_n</text>
+  <text x="400" y="338" text-anchor="middle" fill="#9a3412" font-size="11">rank 256, σ-bottleneck</text>
+
+  <!-- gamma gate -->
+  <line x1="400" y1="350" x2="400" y2="380" stroke="#ea580c" stroke-width="1.6" marker-end="url(#arrow5o)"/>
+  <rect x="365" y="380" width="70" height="36" rx="18" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="400" y="403" text-anchor="middle" fill="#9a3412" font-weight="600">γ_n</text>
+
+  <!-- gamma to + on stream -->
+  <line x1="400" y1="416" x2="400" y2="430" stroke="#ea580c" stroke-width="1.6"/>
+  <line x1="400" y1="430" x2="196" y2="430" stroke="#ea580c" stroke-width="1.6" marker-end="url(#arrow5o)"/>
+
+  <!-- annotation about gamma curriculum -->
+  <g transform="translate(490, 380)">
+    <text x="0" y="0"  fill="#9a3412" font-size="11">γ: 0 → 1 over</text>
+    <text x="0" y="14" fill="#9a3412" font-size="11">first 30% of training</text>
+  </g>
+
+  <!-- annotation: side-channel = retrofit -->
+  <g transform="translate(560, 220)">
+    <rect x="-6" y="-18" width="180" height="44" rx="6" fill="#fef3c7" stroke="#ea580c" stroke-width="1" opacity="0.5"/>
+    <text x="0" y="-2" fill="#9a3412" font-size="11" font-weight="600">AR-Retrofit side-channel</text>
+    <text x="0" y="14" fill="#9a3412" font-size="11">all new; backbone frozen</text>
+  </g>
+
+  <!-- label h_n -->
+  <line x1="180" y1="535" x2="180" y2="565" stroke="#1f2937" stroke-width="1.6"/>
+  <text x="195" y="558" fill="#1f2937" font-style="italic">h_n</text>
+</svg>
