@@ -94,6 +94,7 @@ blog_name: al-folio # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:slug/
 lsi: false # produce an index for related posts
+future: true # build posts dated in the future (avoids skips when runner clock lags author clock)
 
 # Pagination
 pagination:

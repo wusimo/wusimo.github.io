@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Attention Residuals: Making the "+" Learned'
-date: 2026-05-17 10:00:00-0400
+date: 2026-05-17 00:00:00-0400
 description: 'Part 2 — replacing the fixed `+` with a softmax over prior block outputs.'
 tags: transformers attention adaptive-computation
 categories: ml

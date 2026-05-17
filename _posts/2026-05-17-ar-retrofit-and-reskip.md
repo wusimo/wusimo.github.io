@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'AR-Retrofit and ReSkip: Attention Residuals on a Frozen Backbone'
-date: 2026-05-17 10:00:00-0400
+date: 2026-05-17 00:00:00-0400
 description: 'Part 3 — retrofitting attention residuals into a pretrained decoder, and using the routing weights to skip blocks at inference.'
 tags: transformers attention adaptive-computation peft
 categories: ml
