@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 660" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- stream as a wide vertical band -->
+  <rect x="155" y="40" width="50" height="580" rx="10" fill="#fef3c7" stroke="#ea580c" stroke-width="1.5" opacity="0.4"/>
+  <text x="180" y="30" text-anchor="middle" fill="#92400e" font-style="italic" font-size="13">residual stream</text>
+
+  <!-- centerline arrow at bottom -->
+  <line x1="180" y1="40"  x2="180" y2="615" stroke="#1f2937" stroke-width="2.5"/>
+  <polygon points="180,615 175,607 185,607" fill="#1f2937"/>
+
+  <!-- x_l labels at each merge point -->
+  <text x="115" y="80"  fill="#1f2937" font-style="italic">x₀</text>
+  <text x="115" y="195" fill="#1f2937" font-style="italic">x₁</text>
+  <text x="115" y="345" fill="#1f2937" font-style="italic">x₂</text>
+  <text x="115" y="495" fill="#1f2937" font-style="italic">x₃</text>
+  <text x="115" y="605" fill="#1f2937" font-style="italic">x_L</text>
+
+  <!-- block 1 -->
+  <g>
+    <line x1="180" y1="100" x2="300" y2="100" stroke="#1f2937" stroke-width="1.6"/>
+    <rect x="300" y="80" width="120" height="50" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="360" y="110" text-anchor="middle" fill="#1e293b">block 1</text>
+    <line x1="360" y1="130" x2="360" y2="180" stroke="#1f2937" stroke-width="1.6"/>
+    <line x1="360" y1="180" x2="198" y2="180" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow2)"/>
+    <circle cx="180" cy="180" r="13" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="180" y="185" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+  </g>
+
+  <!-- block 2 -->
+  <g>
+    <line x1="180" y1="250" x2="300" y2="250" stroke="#1f2937" stroke-width="1.6"/>
+    <rect x="300" y="230" width="120" height="50" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="360" y="260" text-anchor="middle" fill="#1e293b">block 2</text>
+    <line x1="360" y1="280" x2="360" y2="330" stroke="#1f2937" stroke-width="1.6"/>
+    <line x1="360" y1="330" x2="198" y2="330" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow2)"/>
+    <circle cx="180" cy="330" r="13" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="180" y="335" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+  </g>
+
+  <!-- block 3 -->
+  <g>
+    <line x1="180" y1="400" x2="300" y2="400" stroke="#1f2937" stroke-width="1.6"/>
+    <rect x="300" y="380" width="120" height="50" rx="8" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="360" y="410" text-anchor="middle" fill="#1e293b">block 3</text>
+    <line x1="360" y1="430" x2="360" y2="480" stroke="#1f2937" stroke-width="1.6"/>
+    <line x1="360" y1="480" x2="198" y2="480" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow2)"/>
+    <circle cx="180" cy="480" r="13" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="180" y="485" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+  </g>
+
+  <!-- ellipsis -->
+  <text x="180" y="555" text-anchor="middle" fill="#6b7280" font-size="20">⋮</text>
+
+  <!-- annotation -->
+  <g transform="translate(440, 110)">
+    <text x="0" y="0"  fill="#374151" font-size="12">read from</text>
+    <text x="0" y="16" fill="#374151" font-size="12">stream,</text>
+    <text x="0" y="32" fill="#374151" font-size="12">write back,</text>
+    <text x="0" y="48" fill="#374151" font-size="12">never overwrite</text>
+  </g>
+</svg>

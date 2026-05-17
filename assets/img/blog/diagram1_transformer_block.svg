@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- centerline (residual stream) -->
+  <line x1="180" y1="40"  x2="180" y2="580" stroke="#1f2937" stroke-width="2.5"/>
+  <polygon points="180,580 175,572 185,572" fill="#1f2937"/>
+
+  <!-- x label top -->
+  <text x="195" y="50" fill="#1f2937" font-style="italic">x</text>
+
+  <!-- y label middle -->
+  <text x="195" y="305" fill="#1f2937" font-style="italic">y</text>
+
+  <!-- z label bottom -->
+  <text x="195" y="575" fill="#1f2937" font-style="italic">z</text>
+
+  <!-- ============ MHA side-car ============ -->
+  <!-- branch out -->
+  <line x1="180" y1="100" x2="280" y2="100" stroke="#1f2937" stroke-width="1.6"/>
+
+  <!-- LayerNorm box -->
+  <rect x="280" y="80" width="100" height="40" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="330" y="105" text-anchor="middle" fill="#1e293b">LayerNorm</text>
+
+  <!-- MHA box -->
+  <rect x="280" y="150" width="100" height="50" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="330" y="180" text-anchor="middle" fill="#1e293b">MHA</text>
+
+  <!-- LN to MHA -->
+  <line x1="330" y1="120" x2="330" y2="150" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- MHA back to stream -->
+  <line x1="330" y1="200" x2="330" y2="240" stroke="#1f2937" stroke-width="1.6"/>
+  <line x1="330" y1="240" x2="200" y2="240" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- + node -->
+  <circle cx="180" cy="240" r="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="180" y="245" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+
+  <!-- highlight the identity span from top to + -->
+  <line x1="180" y1="100" x2="180" y2="226" stroke="#ea580c" stroke-width="3" opacity="0.6"/>
+
+  <!-- ============ FFN side-car ============ -->
+  <line x1="180" y1="370" x2="280" y2="370" stroke="#1f2937" stroke-width="1.6"/>
+
+  <rect x="280" y="350" width="100" height="40" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="330" y="375" text-anchor="middle" fill="#1e293b">LayerNorm</text>
+
+  <rect x="280" y="420" width="100" height="50" rx="6" fill="#eef2ff" stroke="#4f46e5" stroke-width="1.5"/>
+  <text x="330" y="450" text-anchor="middle" fill="#1e293b">FFN</text>
+
+  <line x1="330" y1="390" x2="330" y2="420" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <line x1="330" y1="470" x2="330" y2="510" stroke="#1f2937" stroke-width="1.6"/>
+  <line x1="330" y1="510" x2="200" y2="510" stroke="#1f2937" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <circle cx="180" cy="510" r="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="180" y="515" text-anchor="middle" fill="#ea580c" font-weight="700">+</text>
+
+  <!-- highlight identity from + to + -->
+  <line x1="180" y1="254" x2="180" y2="496" stroke="#ea580c" stroke-width="3" opacity="0.6"/>
+
+  <!-- legend -->
+  <g transform="translate(20, 555)">
+    <line x1="0" y1="0" x2="22" y2="0" stroke="#ea580c" stroke-width="3" opacity="0.6"/>
+    <text x="30" y="4" fill="#374151">identity path (the "+")</text>
+  </g>
+</svg>
