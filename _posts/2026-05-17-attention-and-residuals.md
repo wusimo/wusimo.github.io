@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Attention, the Residual Stream, and What's Hiding in the '+'
+title: 'Attention, the Residual Stream, and What''s Hiding in the "+"'
 date: 2026-05-17 10:00:00-0400
-description: Part 1: what the residual `+` in a transformer is actually doing, and why we should care.
+description: 'Part 1 — what the residual `+` in a transformer is actually doing, and why we should care.'
 tags: transformers attention residuals
 categories: ml
 related_posts: true

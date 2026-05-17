@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AR-Retrofit and ReSkip: Attention Residuals on a Frozen Backbone
+title: 'AR-Retrofit and ReSkip: Attention Residuals on a Frozen Backbone'
 date: 2026-05-17 10:00:00-0400
-description: Part 3: retrofitting attention residuals into a pretrained decoder, and using the routing weights to skip blocks at inference.
+description: 'Part 3 — retrofitting attention residuals into a pretrained decoder, and using the routing weights to skip blocks at inference.'
 tags: transformers attention adaptive-computation peft
 categories: ml
 related_posts: true
 ---
 
-*Part 3 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/2026-05-17-attention-and-residuals/) set up the residual stream; [Part 2](/blog/2026/2026-05-17-attention-residuals/) replaced the fixed `+` with learned attention over depth.*
+*Part 3 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/attention-and-residuals/) set up the residual stream; [Part 2](/blog/2026/attention-residuals/) replaced the fixed `+` with learned attention over depth.*
 
 ## The problem this post is about
 
