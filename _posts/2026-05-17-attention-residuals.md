@@ -10,7 +10,7 @@ toc:
   beginning: true
 ---
 
-*Part 2 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/05/17/attention-and-residuals/) set up the residual stream and the question this post answers.*
+*Part 2 of a series on attention residuals and AR-Retrofit. [Part 1](/blog/2026/2026-05-17-attention-and-residuals/) set up the residual stream and the question this post answers.*
 
 ## Picking up from Post 1
 
